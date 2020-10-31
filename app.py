@@ -18,7 +18,7 @@ def API():
         hashed_password = convert(password)
         return jsonify({'password' : hashed_password})
 
-@app.route('/api/check/hash',methods = ['GEaT'])
+@app.route('/api/check/hash',methods = ['GET'])
 def check():
     if request.method == 'GET':
         p = str(request.args['p'])
